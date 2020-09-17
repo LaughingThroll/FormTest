@@ -1,6 +1,9 @@
 html {
 	box-sizing: border-box;
 	font-size: $main-fz;
+	@include max-width(768px) {
+		font-size: 14px;
+	}
 }
 html,
 body {
@@ -12,11 +15,28 @@ body {
 *::after {
 	box-sizing: inherit;
 }
+ 
+:focus::-webkit-input-placeholder {
+  color: transparent
+}
+ 
+:focus::-moz-placeholder {
+  color: transparent
+}
+ 
+:focus:-moz-placeholder {
+  color: transparent
+}
+ 
+:focus:-ms-input-placeholder {
+  color: transparent
+}
+
 
 body {
 	margin: 0;
 	padding: 0;
-	font-family: $main-font;
+	font-family: $main-font, sans-serif;
 	color: $main-color;
 }
 // start reset CSS
@@ -67,14 +87,16 @@ a {
 	min-height: 100%;
 	overflow-x: hidden;
 }
-.content {
-	flex: 1 0 auto;
-}
-.footer {
-	flex: 0 0 auto;
-}
-.container {
+.container-fluid {
 	max-width: $main-width;
-	padding: 0 15px;
+	// padding: 0 15px;
 	margin: 0 auto;
+}
+
+
+.action {
+	font-weight: 600;
+}
+.upper-case {
+	text-transform: uppercase;
 }

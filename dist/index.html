@@ -4,52 +4,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
-
+  <title>TestForma</title>
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/style.min.css">
-
 </head>
 
 <body>
 
+  <div class="container-fluid">
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__inner">
 
-  <div class="wrapper">
-    <div class="content">
-      <div class="header">
-        
-        
+          <form class="header__form form">
+            <div class="form__inner">
+              <div class="form__headline headline">
+                <h1 class="headline__title">Попробуйте <span class="upper-case"> Бесплатно </span></h1>
+                
+                <div class="headline__join join">
+                  <div class="join__number">
+                    <div>2000</div>
+                    <div class="upper-case">бизнесов</div>
+                  </div>
+                  <div class="join__text">
+                    <div>уже попробовали JoinChat. </div>
+                    <div>Присоединяйтесь к ним - создайте аккаунт прямо сейчас. <span class="action">Первые 15 дней
+                        бесплатно.</span></div>
+                  </div>
+                </div>
 
+              </div>
+
+              <div class="form__inputs inputs">
+                <input type="text" class="inputs__item" placeholder="Название компании" required>
+                <input type="e-mail" class="inputs__item" placeholder="Email" required>
+                <input type="tel" class="inputs__item" placeholder="Телефон" required>
+              </div>
+              <button type="button" class="form__btn btn">Попробовать бесплатно</button>
+            </div>
+       
+        </form>
+        <div class="header__img"></div>
       </div>
-
-
-
+      </header>
     </div>
-    <div class="footer">
-      
-    </div>
+
+
   </div>
 
 
 
-  <script src="js/vendor.min.js"></script>
+  <!-- <script src="js/vendor.min.js"></script> -->
   <script src="js/main.min.js"></script>
 </body>
 

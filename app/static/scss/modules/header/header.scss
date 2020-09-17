@@ -1,0 +1,62 @@
+.header  {
+
+  &__inner {
+    display: flex;
+    height: 100vh;
+    @include max-width(768px) {
+      height: 100%;
+     
+    }
+
+  }
+  &__form {
+    flex: 0 1 100%;
+    @include max-width(768px) {
+      padding: rem(60px) 0;
+    }
+  }
+  &__img {
+    position: relative;
+    flex: 0 2 100%;
+    @include max-width(1270px) {
+      flex: 0 0 auto;
+    }
+    @include max-height(635px) {
+      flex: 0 0 auto;
+    }
+    &::after,
+    &::before {
+      content: '';
+      position: absolute;
+      background-repeat: no-repeat;
+    }
+    &::after {
+      top: 50%;
+      left: 0;
+      transform: translate(-35%, -50%);
+      background-image: url('./../images/mobile-calculate.png');
+      width: 378px;
+      height: 624px;
+      @include max-width(1650px) {
+        display: none;
+      }
+      @include max-height(635px) {
+        display: none;
+      }
+    }
+    &::before {
+      top: 50%;
+      transform: translate(25%, -50%);
+      right: 0;
+      background-image: url('./../images/ipad.png');
+      width: 505px;
+      height: 700px;
+      @include max-width(1270px) {
+        display: none;
+      }
+      @include max-height(720px) {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.headline {
+  &__title {
+    font-weight: 900;
+    letter-spacing: -1.92px;
+    margin-bottom: rem(24px);
+    @include max-width(535px) {
+      font-size: 46px;
+    }
+  
+  }
+  &__join {
+    margin-bottom: rem(55px);
+    @include max-width(768px) {
+      margin-bottom: rem(30px);
+    }
+  }
+}

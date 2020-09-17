@@ -1,27 +1,33 @@
+@import './mixin';
 // All color 
-$main-color: #ff00cc;
+$main-color: #000;
 
 $white: #fff;
 $black: #000;
 
+$yellow: #fdde00;
+$green: #001515;
 
 
 
 // All Font 
-$main-font: '';
+$main-font: 'Gilroy-Regular';
 // + or - size * on number [.5, .75, 1.25, 1.5]
-$main-fz: 14px;
+$main-fz: 18px;
 
 
 
-$main-width: 1170px;
+$main-width: 1920px;
 // h1-h6
-h1 {font-size: 42px;}
-h2 {font-size: 32px;}
-h3 {font-size: 28px;}
-h4 {font-size: 22px;}
-h5 {font-size: 18px;}
-h6 {font-size: 16px;}
+h1 {
+  font-size: 64px;
+ 
+}
+// h2 {font-size: 32px;}
+// h3 {font-size: 28px;}
+// h4 {font-size: 22px;}
+// h5 {font-size: 18px;}
+// h6 {font-size: 16px;}
 
 @function rem($pixels, $context: $main-fz) {
   @return ($pixels/$context) * 1rem;

@@ -1,0 +1,79 @@
+.join {
+  display: flex;
+  align-items: center;
+  @include max-width(768px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &__number {
+    position: relative;
+    font-size: 75px;
+    line-height: 75px;
+    font-weight: 900;
+    letter-spacing: -2.25px;
+    padding-right: 55px;
+    @include max-width(768px) {
+      padding-right: 0;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+    }
+    @include max-width(535px) {
+      font-size: 50px;
+      line-height: 50px;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-43%);
+      right: 0;
+      height: 95px;
+      width: 6px;
+      background-color: $black;
+      @include max-width(768px) {
+        top: 100%;
+        left: 0;
+        height: 6px;
+        width: 250%;
+      }
+      @include max-width(535px) {
+        top: 100%;
+        left: 0;
+        height: 6px;
+        width: 100%;
+      }
+
+    }
+    div:last-child {
+      display: block;
+      font-size: 36px;
+      line-height: 36px;
+      letter-spacing: -1.08px;
+    }
+  }
+  &__text {
+    font-size: 34px;
+    font-weight: 500;
+    letter-spacing: -1.02px;
+    max-width: 490px;
+    width: 100%;
+    margin-left: rem(20px);
+    @include max-width(535px) {
+      margin-left: 0;
+      font-size: 26px;
+    }
+    div:last-child {
+      display: block;
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: 400;
+      margin-top: rem(20px);
+      @include max-width(768px) {
+        margin-top: rem(10px);
+      }
+      @include max-width(535px) {
+        font-size: 16px;
+      }
+    }
+  }
+}

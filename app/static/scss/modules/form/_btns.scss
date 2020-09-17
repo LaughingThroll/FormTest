@@ -1,0 +1,12 @@
+.btn {
+  background-color: $green;
+  box-shadow: 0 10px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  color: $white;
+  padding: 15px 60px;
+  font-family: 'Gilroy-Regular', sans-serif;
+  font-weight: 700;
+  @include max-width(535px) {
+    width: 100%;
+  }
+}

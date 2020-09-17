@@ -1,0 +1,28 @@
+.inputs {
+  display: flex;
+  justify-content: space-between;
+  @include max-width(768px) {
+    flex-direction: column;
+  }
+  &__item {
+    flex: 0 1 33.3333%;
+    padding: 16px 10px;
+    height: 55px;
+    border-radius: 5px;
+    @include max-width(768px) {
+      flex: 0 1 100%;
+    }
+    &::placeholder  {
+      font-size: 16px;
+      opacity: .5;
+      font-family: 'Gilroy-Regular', sans-serif;
+    }
+    & + .inputs__item {
+      margin-left: rem(24px);
+      @include max-width(768px) {
+        margin-left: 0;
+        margin-top: rem(24px);
+      }
+    }
+  }
+}
